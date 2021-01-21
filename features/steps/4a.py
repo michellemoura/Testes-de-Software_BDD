@@ -35,16 +35,14 @@ def step_impl(context):
 
 @step('the user enters what he wants to search')
 def step_impl(context):
-    username = context.driver.find_element_by_id('search')
-    username.send_keys('Login')
+    term = context.driver.find_element_by_id('search')
+    term.send_keys('Login')
     time.sleep(2)
 
 
 @when('the user click the search button')
 def step_impl(context):
     search_button = context.driver.find_element_by_xpath("//div[@class='d-flex']/button")
-    #buscar_button = context.driver.find_element_by_name_class('btn btn-primary px-4 fontAccessibility')
-    #search_button = context.driver.find_element_by_class_name("d-flex")
     search_button.click()
     time.sleep(3)
 

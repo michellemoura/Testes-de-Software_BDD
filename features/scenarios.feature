@@ -36,7 +36,7 @@ Scenario: Enable system pounds videos (5a)
   Then the system returns the enabled option
 
   @exit
-Scenario: Sair da página (6a)
+Scenario: Leave the page (6a)
   Given that the user is logged in to the system4
   When the user click on user information
       And the user click the exit button and confirm that he wishes to quit

@@ -33,6 +33,7 @@ def step_impl(context):
     infouser_button.click()
     time.sleep(2)
 
+
 @step('the user click the exit button and confirm that he wishes to quit')
 def step_impl(context):
     exit_button = context.driver.find_element_by_id('logout')
